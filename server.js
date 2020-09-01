@@ -63,5 +63,6 @@ app.use(redirectToHome);
 
 
 app.listen( process.env.PORT || 4000, () => {
-    console.log("Listening on http://localhost:" + (process.env.PORT || "4000") + "/");
+    //console.log("Listening on http://localhost:" + (process.env.PORT || "4000") + "/");
+    console.log("Express server listening on port %d in %s mode", (process.env.PORT || "4000"), app.settings.env);
 });
